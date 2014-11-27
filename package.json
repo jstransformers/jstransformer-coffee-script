@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-coffee-script",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform Coffee Script to JavaScript",
   "keywords": [
     "jstransformer"
