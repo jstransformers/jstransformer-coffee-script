@@ -4,7 +4,7 @@ var assert = require('assert');
 
 var transform = require('../');
 
-var res = transform.compile('n = 42\nconsole.log n');
+var res = transform.render('n = 42\nconsole.log n');
 
 var passed = false;
 Function('console', res)({
