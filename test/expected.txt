@@ -1,0 +1,7 @@
+var msg, name;
+
+name = 'World';
+
+msg = "Hello, " + name + "!";
+
+console.log(msg);

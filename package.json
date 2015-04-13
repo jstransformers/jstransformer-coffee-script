@@ -1,15 +1,24 @@
 {
   "name": "jstransformer-coffee-script",
-  "version": "0.0.2",
-  "description": "Transform Coffee Script to JavaScript",
+  "version": "0.1.0",
+  "description": "Coffee-Script support for JSTransformers.",
   "keywords": [
-    "jstransformer"
+    "jstransformer",
+    "coffee-script"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {
-    "coffee-script": "^1.8.0"
+    "coffee-script": "^1.9.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.5",
+    "testit": "^2.0.2"
   },
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "coverage": "istanbul cover test"
   },
   "repository": {
     "type": "git",

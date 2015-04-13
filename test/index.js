@@ -1,18 +1,23 @@
 'use strict';
 
 var assert = require('assert');
+var fs = require('fs');
+var join = require('path').join;
+var test = require('testit');
 
 var transform = require('../');
 
-var res = transform.render('n = 42\nconsole.log n');
+var input = fs.readFileSync(join(__dirname, 'input.txt')).toString();
+var options = JSON.parse(fs.readFileSync(join(__dirname, 'options.json')).toString());
+var expected = fs.readFileSync(join(__dirname, 'expected.txt')).toString();
 
-var passed = false;
-Function('console', res)({
-  log: function (value) {
-    assert(!passed, 'only logs once');
-    assert(value === 42, 'should log 42');
-    passed = true;
-  }
+function assertEqual(output, expected) {
+  console.log('   Output:\t'   + JSON.stringify(output));
+  console.log('   Expected:\t' + JSON.stringify(expected));
+  assert.equal(output, expected);
+}
+
+test(transform.name, function () {
+  var output = transform.render(input, options);
+  assertEqual(output.trim(), expected.trim());
 });
-assert(passed, 'should log');
-console.log('test passed');
