@@ -3,8 +3,7 @@
 var coffee = require('coffee-script');
 
 exports.name = 'coffee-script';
+exports.inputFormats = ['coffee', 'coffee-script', 'coffeescript'];
 exports.outputFormat = 'js';
 
-exports.render = function (str, options) {
-  return coffee.compile(str, options);
-};
+exports.render = coffee.compile;
