@@ -1,7 +1,7 @@
 {
-  "name": "jstransformer-coffee-script",
-  "version": "1.1.0",
-  "description": "Coffee-Script support for JSTransformers.",
+  "name": "jstransformer-iced-coffee-script",
+  "version": "1.0.0",
+  "description": "Iced-Coffee-Script support for JSTransformers.",
   "keywords": [
     "jstransformer"
   ],
@@ -9,7 +9,6 @@
     "index.js"
   ],
   "dependencies": {
-    "coffee-script": "~1.10.0",
     "merge": "^1.2.0"
   },
   "devDependencies": {
@@ -21,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstransformers/jstransformer-coffee-script.git"
+    "url": "https://github.com/jstransformers/jstransformer-iced-coffee-script.git"
   },
   "author": {
-    "name": "JSTransformers Team",
+    "name": "JSTransformers Team + LazyTyper",
     "url": "http://github.com/orgs/jstransformers/people"
   },
   "license": "MIT"
