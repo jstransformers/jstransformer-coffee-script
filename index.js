@@ -1,9 +1,9 @@
 'use strict';
 
-var coffee = require('iced-coffee-script');
+var coffee = require('iced-coffee-script-3');
 var merge = require('merge');
 
-exports.name = 'iced-coffee-script';
+exports.name = 'iced-coffee-script-3';
 exports.inputFormats = ['coffee', 'coffee-script'];
 exports.outputFormat = 'js';
 

@@ -1,17 +1,19 @@
-var search, __iced_k, __iced_k_noop;
+var search;
 
-__iced_k = __iced_k_noop = function() {};
+
 
 search = function(keyword, cb) {
-  var host, json, url, ___iced_passed_deferral, __iced_deferrals, __iced_k;
-  __iced_k = __iced_k_noop;
-  ___iced_passed_deferral = iced.findDeferral(arguments);
-  host = "http://search.twitter.com/";
-  url = "" + host + "/search.json?q=" + keyword + "&callback=?";
-  (function(_this) {
-    return (function(__iced_k) {
-      __iced_deferrals = new iced.Deferrals(__iced_k, {
-        parent: ___iced_passed_deferral
+  var __iced_it, __iced_passed_deferral;
+  __iced_passed_deferral = iced.findDeferral(arguments);
+  __iced_it = (function(_this) {
+    var host, json, url;
+    return function*() {
+      var __iced_deferrals;
+      host = "http://search.twitter.com/";
+      url = host + "/search.json?q=" + keyword + "&callback=?";
+      __iced_deferrals = new iced.Deferrals(__iced_it, {
+        parent: __iced_passed_deferral,
+        funcname: "<anonymous: search>"
       });
       $.getJSON(url, __iced_deferrals.defer({
         assign_fn: (function() {
@@ -21,11 +23,11 @@ search = function(keyword, cb) {
         })(),
         lineno: 3
       }));
-      __iced_deferrals._fulfill();
-    });
-  })(this)((function(_this) {
-    return function() {
+      if (__iced_deferrals.await_exit()) {
+        yield;
+      }
       return cb(json.results);
     };
-  })(this));
+  })(this)();
+  return __iced_it.next();
 };

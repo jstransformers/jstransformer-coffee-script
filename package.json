@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "iced-coffee-script": "^108.0.11",
+    "iced-coffee-script-3": "^110.0.0",
     "merge": "^1.2.0"
   },
   "devDependencies": {
