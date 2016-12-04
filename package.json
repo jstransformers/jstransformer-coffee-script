@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "coffee-script": "~1.11.0",
+    "coffee-script": "~1.12.0",
     "merge": "^1.2.0"
   },
   "devDependencies": {
