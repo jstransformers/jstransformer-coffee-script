@@ -1,5 +1,7 @@
 # jstransformer-coffee-script
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-coffee-script.svg)](https://greenkeeper.io/)
+
 [CoffeeScript](http://coffeescript.org) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-coffee-script/master.svg)](https://travis-ci.org/jstransformers/jstransformer-coffee-script)
