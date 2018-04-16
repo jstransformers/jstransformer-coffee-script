@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.1: 2018-01-26
+
+- Update Boilerplate
+
 ## v1.1.0: 2016-08-08
 
 - Update to coffee-script@1.10.0
