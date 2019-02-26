@@ -1,5 +1,5 @@
 {
-  "name": "jstransformer-coffee-script",
+  "name": "jstransformer-coffee",
   "version": "2.0.0",
   "description": "Coffee-Script support for JSTransformers.",
   "keywords": [
