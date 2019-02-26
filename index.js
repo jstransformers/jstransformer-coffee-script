@@ -3,7 +3,7 @@
 const coffee = require('coffeescript')
 const merge = require('merge')
 
-exports.name = 'coffeescript'
+exports.name = 'coffee'
 exports.inputFormats = ['coffee', 'coffee-script']
 exports.outputFormat = 'js'
 
