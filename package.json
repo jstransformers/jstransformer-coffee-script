@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-coffee-script",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Coffee-Script support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -9,8 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "coffee-script": "~1.12.7",
-    "merge": "^1.2.0"
+    "coffeescript": ">=2",
   },
   "devDependencies": {
     "test-jstransformer": "^1.0.0",
