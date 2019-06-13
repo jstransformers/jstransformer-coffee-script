@@ -1,5 +1,5 @@
 {
-  "name": "jstransformer-coffee",
+  "name": "jstransformer-coffee-script",
   "version": "2.0.0",
   "description": "Coffee-Script support for JSTransformers.",
   "keywords": [
@@ -9,7 +9,7 @@
     "index.js"
   ],
   "dependencies": {
-    "coffeescript": ">=2",
+    "coffeescript": "^2.4.1",
     "merge": "^1.2.0"
   },
   "devDependencies": {
@@ -22,7 +22,7 @@
     "posttest": "xo --space=2 --no-semicolon index.js"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "repository": {
     "type": "git",
