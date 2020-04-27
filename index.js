@@ -1,9 +1,9 @@
 'use strict'
 
-const coffee = require('coffee-script')
+const coffee = require('coffeescript')
 const merge = require('merge')
 
-exports.name = 'coffee-script'
+exports.name = 'coffee'
 exports.inputFormats = ['coffee', 'coffee-script']
 exports.outputFormat = 'js'
 

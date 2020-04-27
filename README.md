@@ -1,4 +1,4 @@
-# jstransformer-coffee-script
+# jstransformer-coffee 2+
 
 [CoffeeScript](http://coffeescript.org) support for [JSTransformers](http://github.com/jstransformers).
 
