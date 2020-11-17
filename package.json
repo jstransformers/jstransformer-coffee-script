@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "coffee-script": "~1.12.7",
-    "merge": "^1.2.0"
+    "merge": "^2.1.0"
   },
   "devDependencies": {
     "test-jstransformer": "^1.0.0",
